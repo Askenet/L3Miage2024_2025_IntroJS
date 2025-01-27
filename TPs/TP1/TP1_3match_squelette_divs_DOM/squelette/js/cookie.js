@@ -47,6 +47,10 @@ export default class Cookie {
     this.htmlImage = img;
   }
 
+  isSelected(){
+    return this.htmlImage.classList.contains("cookies-selected");
+  }
+
   selectionnee() {
     // on change l'image et la classe CSS
     // A FAIRE
@@ -61,6 +65,18 @@ export default class Cookie {
     // A FAIRE
     console.log("SWAP C1 C2");
     // On échange leurs images et types
+    //on regarde la distance entre les deux cookies
+    //si c 1 on peut swap
+    const dist = Cookie.distance(c1, c2);
+    if(dist === 1){
+      let tmp = c1.type;
+      c1.type = c2.type;
+      c2.type = tmp;
+
+      tmp = c1.htmlImage.src;
+      c1.htmlImage.src = c2.htmlImage.src;
+      c2.htmlImage.src = tmp;
+    }
 
     // et on remet les images correspondant au look
     // "désélectionné"

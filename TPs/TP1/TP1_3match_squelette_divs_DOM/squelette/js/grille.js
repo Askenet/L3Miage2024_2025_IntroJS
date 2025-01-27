@@ -49,6 +49,10 @@ export default class Grille {
         console.log("On a cliqué sur la ligne " + ligne + " et la colonne " + colonne);
         //let cookieCliquee = this.getCookieFromLC(ligne, colonne);
         console.log("Le cookie cliqué est de type " + cookie.type);
+        //test si on a cliqué sur un cookie déjà select -> deselect
+        if(cookie.isSelected()){
+          
+
         // highlight + changer classe CSS
         cookie.selectionnee();
 
@@ -56,6 +60,8 @@ export default class Grille {
         // si 0 on ajoute le cookie cliqué au tableau
         // si 1 on ajoute le cookie cliqué au tableau
         // et on essaie de swapper
+        this.cookieSelectionnees.push(cookie);
+        Cookie.
       }
 
       // A FAIRE : ecouteur de drag'n'drop
