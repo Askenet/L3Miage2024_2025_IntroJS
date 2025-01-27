@@ -1,0 +1,3 @@
+1 - effort sur les jeux pas des basiques (snake, morpion etc)
+2 - travail personnel pas 100% mais doser sur l'IA (prendre des bouts de code utile si besoin pour les colisions etc)
+3 - Point commun entre les 3 jeux au niveau du code, ré utiliser du code si possible
